@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #add8e6;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 600px; /* Фиксированная ширина */
+            padding: 25px;
+            display: flex;
+            gap: 25px;
+            min-height: 200px; /* Минимальная высота */
+        }
+
+        .photo {
+            flex-shrink: 0;
+            width: 100px;
+            height: 150px; /* Фиксированная высота для фото */
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Единый размер изображений */
+            border-radius: 10px;
+        }
+
+        .info {
+            color: #5f1414;
+            flex-grow: 1;
+        }
+
+        .info h1 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #2c3e50;
+        }
+
+        .info p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Первая карточка -->
+    <div class="card">
+        <div class="photo">
+            <img src="E.V.jpeg" alt="Екатерина Вилкова">
+        </div>
+        <div class="info">
+            <h1>ЕКАТЕРИНА ВИЛКОВА</h1>
+            <p>Екатерина Вилкова — российская актриса театра и кино...</p>
+            <p>Email: Vilkova@example.com</p>
+            <p>Дата рождения: 11.07.1984</p>
+            <p>Город: Горький</p>
+        </div>
+    </div>
+
+    <!-- Вторая карточка -->
+    <div class="card">
+        <div class="photo">
+            <img src="K.S.jpeg" alt="Катя Шпица">
+        </div>
+        <div class="info">
+            <h1>Катя Шпица</h1>
+            <p>Катя Шпица — российская актриса театра, кино...</p>
+            <p>Email: Spica@example.com</p>
+            <p>Дата рождения: 29.11.1985</p>
+            <p>Город: Пермь</p>
+        </div>
+    </div>
+
+    <!-- Третья карточка -->
+    <div class="card">
+        <div class="photo">
+            <img src="N.A.jpeg" alt="Наталья Антонова">
+        </div>
+        <div class="info">
+            <h1>Наталья Антонова</h1>
+            <p>Наталья Антонова — актриса Московского драматического театра...</p>
+            <p>Email: Антонова@example.com</p>
+            <p>Дата рождения: 12.03.1974</p>
+            <p>Город: Москва</p>
+        </div>
+    </div>
+</body>
+</html>
